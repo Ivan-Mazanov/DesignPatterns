@@ -12,7 +12,7 @@ public abstract class Command {
         }
     }
 
-    public Soldier getBackup() {
+    public Soldier restoreBackup() {
         return backup;
     }
 }
