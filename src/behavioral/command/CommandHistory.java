@@ -13,4 +13,10 @@ public class CommandHistory {
         command.backupSoldier(soldier);
         command.doSomething();
     }
+
+    public Soldier undo(){
+        Soldier backup = history.getLast().getBackup();
+        history.removeLast();
+        return backup;
+    }
 }
