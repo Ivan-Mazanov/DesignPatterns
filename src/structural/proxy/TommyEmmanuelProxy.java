@@ -6,10 +6,11 @@ public class TommyEmmanuelProxy implements Guitarist{
 
     @Override
     public void play() {
-        if (tommyEmmanuel == null){
-            tommyEmmanuel = new TommyEmmanuel();
-        }
         //Настроил гитару
         tommyEmmanuel.play();
+    }
+
+    public TommyEmmanuelProxy(Guitarist tommyEmmanuel) {
+        this.tommyEmmanuel = tommyEmmanuel;
     }
 }
